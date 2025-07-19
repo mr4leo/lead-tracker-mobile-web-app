@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Leads Tracker</title>
+</head>
+<body>
+    
+<div class="container">
+
+    
+    <!-- <div class="copy-tab">
+        <button id="tab-btn" title="Copy URL from address bar above">
+            <i class="fa-solid fa-copy"></i>
+            <p>url</p>
+        </button>
+    </div> -->
+
+    
+    <h2>Bookmark It</h2>
+    <div class="input-area">
+        <fieldset>
+            <legend>Enter URL</legend>
+            <!-- <label for="web-address">Web Address</label> -->
+            <input type="text" id="input-el" placeholder="example-website.com">
+        </fieldset>
+
+        <div class="button-row">
+            <button class ="buttons" id="input-btn" type="button">Save</button>
+            <button class ="buttons" id="clear-btn" type="button">Clear All</button>
+        </div>    
+
+    </div>
+    
+
+    <div id="bookmark-div">
+        <h6 class="subtitle">Saved Sites</h6>
+        <ul id = "ul-el">
+            <li id="bookmarked-list-item"><span style="color:rgb(199, 199, 199)" >- Place Holder -</span></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<script>
+  // fetched from your server or injected at deploy time
+  window.DATABASE_URL = "https://leads-tracker-app-edf4f-default-rtdb.firebaseio.com";
+</script>
+
+<script src="https://kit.fontawesome.com/3893fe89c9.js" crossorigin="anonymous"></script>
+<script type="module" src="index.js"></script>
+
+</body>
+</html>
+
+
+
